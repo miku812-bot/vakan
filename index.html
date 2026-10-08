@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>emil</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:#f4f4f4;color:#111;font-family:Manrope,-apple-system,"Helvetica Neue",Arial,sans-serif;cursor:default;user-select:none}
+.wrap{max-width:936px;margin:0 auto;padding:0 16px}
+header{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{flex:1;font-weight:800;font-size:30px;letter-spacing:-.05em}
+.hbtn{flex:1;display:flex;justify-content:flex-end}
+header nav{flex:none;display:flex;gap:34px;font-size:12px;font-weight:600;white-space:nowrap}
+.btn-blue{background:#2f6bf5;color:#fff;border-radius:10px;padding:10px 20px;font-size:12px;font-weight:500}
+.hero,.foot{position:relative;overflow:hidden;background:#000;color:#fff;border-radius:20px}
+.hero{height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.hero h1{position:relative;z-index:2;margin:0 0 22px;font-size:38px;line-height:1.05;font-weight:600;letter-spacing:-.02em}
+.hero .btn-dark{position:relative;z-index:2;background:#fff;color:#111;border-radius:8px;padding:11px 28px;font-size:12px;font-weight:500}
+.main{display:flex;align-items:flex-start;gap:16px;margin:16px 0}
+.side{flex:none;width:284px;background:#fff;border-radius:18px;padding:16px}
+.search{display:flex;align-items:center;gap:8px;background:#efefef;border-radius:10px;height:34px;padding:0 10px;font-size:12px}
+.side h4{margin:16px 0 8px;font-size:11px;font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{background:#efefef;color:#8a8a8a;border-radius:6px;padding:6px 9px;font-size:11px}
+.loc{background:#efefef;border-radius:10px;padding:6px 8px}
+.loc div{display:flex;justify-content:space-between;align-items:center;height:23px;font-size:10px}
+.loc i{width:14px;height:14px;border-radius:3px;background:#e4e4e4}
+.sal{display:flex;gap:10px}
+.sal span{flex:1;background:#efefef;border-radius:8px;padding:9px 8px;font-size:11px}
+.jobs{flex:1;min-width:0;display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start}
+.job{flex:0 0 calc((100% - 18px) / 3);position:relative;background:#fafafa;border-radius:16px;padding:15px 15px 14px;min-height:181px;box-shadow:0 0 0 1px #e4e4e4}
+.co{font-size:9px;font-weight:600}
+.job h3{margin:6px 0 4px;font-size:15px;font-weight:500;line-height:1.15;letter-spacing:-.01em;min-height:36px}
+.where{font-size:10px;color:#8a8a8a}
+.tags{position:absolute;left:15px;right:15px;bottom:14px;display:flex;flex-wrap:wrap;gap:6px}
+.tags span{background:#efefef;border-radius:4px;padding:4px 7px;font-size:9px}
+.tags .full{margin-bottom:0}
+.foot{padding:56px 24px;margin-bottom:24px}
+.big{line-height:1;text-align:center;font-weight:800;font-size:64px;letter-spacing:-.05em;color:#fff}
+@media(max-width:860px){.main{flex-direction:column;align-items:stretch}.side{width:100%}.job{flex-basis:calc((100% - 9px) / 2)}}
+@media(max-width:560px){.job{flex-basis:100%}.logo{font-size:24px}header nav{gap:14px;font-size:11px}.btn-blue{padding:9px 12px;font-size:11px}.hero h1{font-size:28px;padding:0 12px}.foot{padding:40px 24px}.big{font-size:56px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">emil</div><nav><span>Вакансии</span><span>Работодателям</span></nav><div class="hbtn"><div class="btn-blue">Опубликовать</div></div></header>
+
+<section class="hero">
+  <h1>Больше вакансий<br>в telegram-канале</h1>
+  <div class="btn-dark">Перейти в ТГ канал</div>
+</section>
+
+<div class="main">
+  <aside class="side">
+    <div class="search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.500 3.500"/></svg>Поиск</div>
+    <h4>Формат</h4><div class="chips"><span>Парт-тайм</span><span>Фулл-тайм</span><span>Стажировка</span></div>
+    <h4>Формат</h4><div class="chips"><span>Офис</span><span>Удаленно</span><span>Гибрид</span></div>
+    <h4>Грейд</h4><div class="chips"><span>Junior</span><span>Middle</span><span>Senior</span><span>Lead</span><span>Head</span></div>
+    <h4>Локация</h4>
+    <div class="loc"><div>Москва<i></i></div><div>Санкт-Петербург<i></i></div><div>Казань<i></i></div><div>Нижний Новгород<i></i></div></div>
+    <h4>Зарплата</h4>
+    <div class="sal"><span>Минимум</span><span>Максимум</span></div>
+  </aside>
+  <section class="jobs">
+    <div class="job">
+      <div class="co">Т-Банк</div>
+      <h3>Художник концепт-арта</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+    <div class="job">
+      <div class="co">Apple</div>
+      <h3>UI/UX Дизайнер</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+    <div class="job">
+      <div class="co">ВТБ</div>
+      <h3>Графический дизайнер</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+    <div class="job">
+      <div class="co">Т-Банк</div>
+      <h3>Промышленный дизайнер</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+    <div class="job">
+      <div class="co">Apple</div>
+      <h3>Диджитал дизайнер</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+    <div class="job">
+      <div class="co">ВТБ</div>
+      <h3>Художник концепт-арта</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+    <div class="job">
+      <div class="co">Т-Банк</div>
+      <h3>Промышленный дизайнер</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+    <div class="job">
+      <div class="co">Т-Банк</div>
+      <h3>Промышленный дизайнер</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+    <div class="job">
+      <div class="co">ВТБ</div>
+      <h3>Графический дизайнер</h3>
+      <div class="where">Москва, формат работы</div>
+      <div class="tags"><span>280 000 ¥</span><span>Фулл-тайм</span><span>Junior</span></div>
+    </div>
+  </section>
+</div>
+
+<footer class="foot">
+  <div class="big">emil</div>
+</footer>
+</div>
+
+</body>
+</html>
